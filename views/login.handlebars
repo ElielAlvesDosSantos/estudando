@@ -1,0 +1,54 @@
+<h1>Página inicial</h1>
+<br>
+<form action="/login" method="post">
+<label for="email">Email</label><br>
+<input type="text" name="email"><br>
+<label for="senha">Senha</label><br>
+<input type="text" name="senha"><br>  
+<button type="submit">Enviar</button><br>
+</form>
+<style>/* Estilo para o título h1 */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo para o formulário */
+form {
+  width: 300px; /* Largura do formulário */
+  margin: 0 auto; /* Centralizar o formulário na página */
+}
+
+/* Estilo para rótulos (labels) */
+label {
+  display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+  margin-top: 10px; /* Espaçamento superior entre os rótulos */
+  color: #666; /* Cor do texto dos rótulos */
+}
+
+/* Estilo para os campos de entrada de texto */
+input[type="text"] {
+  width: 100%; /* Ocupa toda a largura do contêiner pai */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+  border: 1px solid #ccc; /* Borda com cor cinza claro */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+  width: 100%; /* Ocupa toda a largura do contêiner pai */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Transforma o cursor em uma mãozinha quando passa o mouse */
+}
+
+/* Estilo para o botão de envio quando o mouse passa por cima (hover) */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Cor de fundo alterada quando o mouse passa por cima */
+}
+</style>

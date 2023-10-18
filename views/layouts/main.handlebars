@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    {{#if log}}
+    <header>
+        <nav>
+            <a>{{nome}}</a>
+            <a href="/cadastrar">Cadastrar</a>
+            <a href="/listar">Listar</a>
+            <a href="/atualizar">Atualizar</a>
+            <a href="/apagar">Apagar</a>
+            <a href="/logout">Sair</a>
+        </nav>
+    </header>
+    <style>
+        /* Defina o estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilize o cabeçalho e a navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Estilize o link ativo */
+nav a[href="/cadastrar"] {
+    color: #ffcc00; /* Cor para o link "Cadastrar" */
+}
+
+nav a[href="/listar"] {
+    color: #ffcc00; /* Cor para o link "Listar" */
+}
+
+nav a[href="/atualizar"] {
+    color: #ffcc00; /* Cor para o link "Atualizar" */
+}
+
+nav a[href="/apagar"] {
+    color: #ffcc00; /* Cor para o link "Apagar" */
+}
+
+nav a[href="/logout"] {
+    color: #ffcc00; /* Cor para o link "Sair" */
+}
+
+/* Estilo para o link comum (não ativo) */
+nav a:not([href]) {
+    color: #ccc;
+}
+
+    </style>
+    {{else}}
+    <header>
+        <nav>
+            <a href="/">home</a>
+            <a href="http://"></a>
+            <a href="http://"></a>
+        </nav>
+    </header>
+    {{/if}}
+    <main>{{{body}}}</main>
+    <footer></footer>
+</body>
+</html>
